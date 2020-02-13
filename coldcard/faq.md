@@ -1,1 +1,3 @@
-Move FAQ here.
+title: Coldcard FAQ
+
+TODO Move FAQ here.
