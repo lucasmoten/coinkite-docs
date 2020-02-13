@@ -1,4 +1,8 @@
-# coinkite-docs
-Doc repo for all of our products
+# Coinkite Docs
 
-Place each project MDs in it's own project folder.
+Repo for documentation on all of our products.
+
+Place markdown for each project in it's own project folder.
+
+Various automated build tools will take it from there.
+

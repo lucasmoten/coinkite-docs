@@ -53,7 +53,7 @@ that you might need to import into other wallet software to track balance.
 By design, this output includes the effects of your [BIP39 passphrase](passphrase) but
 does not indicate it is being used.
 
-Here is [an example](static/example-public.txt) of the file produced by Coldcard.
+Here is [an example](example-public.txt) of the file produced by Coldcard.
 
 There are sections with derived (public) keys for a number of different wallet systems,
 and the first five payment addresses derived for each is shown:
