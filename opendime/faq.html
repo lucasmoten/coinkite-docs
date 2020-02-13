@@ -1,0 +1,330 @@
+{% block page_title %}
+  <title>{{SITE_NAME_ASCII}} – Frequently Asked Questions</title>
+{% endblock page_title %}
+
+{% extends "navpage.html" %}
+{% block page %}
+
+  <!-- INTRO BEGIN -->
+  <header id="blog-intro" class="intro-block" >
+    <div class="container">
+      <h1 class="slogan">FAQ</h1>
+    </div>
+    <div class="block-bg" data-stellar-ratio="0.5"></div>
+  </header>
+  <!-- INTRO END --> 
+  
+  <!-- BLOG BEGIN -->
+    <div class="container">
+      <div class="row">
+        <div id="faq" class="col-md-12 col-lg-8 col-lg-offset-2" style="text-align: left;margin-bottom:50px;">
+
+
+<h4 id="unseal">How do I unseal it to reveal the Bitcoins?</h4>
+<p>We find that using a Push Pin is the easiest way, simply push it through the hole pointed by the arrow</p>
+
+<p><iframe width="320" height="180" src="https://www.youtube.com/embed/Lev0YrlWu4A" frameborder="0" allowfullscreen></iframe></p>
+
+
+<h4 id="phone">Can I use this with a phone / tablet?</h4>
+<p>
+Yes! Because Opendime emulates a tiny USB flash drive, most devices can 
+read it already. Inside, you'll find text files with the payment address,
+and if unsealed, the private key in WIF format. We also provide a QR image
+that is easily scanned.
+
+You can also use a USB phone charger, or USB power pack, to check
+if it's unsealed: plug it into any USB port, and the lights flash
+in a pattern that indicate it's status.
+</p>
+
+
+<h4 id="pcb">Why is it a bare board?</h4>
+<p>
+We've worked hard to keep costs down. All the fat has been trimmed. At the same
+time, our packaging is much more rugged that it appears, and because it's
+clear, any tampering would be visible.
+</p>
+
+<h4 id="wallet">Does this replace my existing Bitcoin wallet?</h4>
+<p>
+No, you still would need a third party wallet or the original Bitcoin Core
+P2P software to be able to move your funds in and out of the Opendime.
+Opendime works with any wallet that can sweep funds from the blockchain
+based on a WIF-format private key import.
+</p>
+
+<h4 id="use">What would this be used for?</h4>
+<ol>
+<li>Gift someone a Bitcoin. Put it on an Opendime and mail it to them. Simple!
+<li>Deliver the payment for a car when you go to pick it up. Just put your
+payment on an Opendime and hand it over when you get the keys. Private key for car keys!
+<li>Load a number of Opendimes with various denominations of Bitcoin. Keep
+them in your pocket to pay for things through-out your day.
+<li>Sell Opendimes, preloaded with value, in exchange for gold or other precious metals.
+<li>Use this instead of a paper wallet. Just as "compatible" but takes care of 
+generating the private key safely.
+</ol>
+
+<h4 id="withdraw">How do I get funds out?</h4>
+<p>To be able to move the funds, you must 
+push a pin through the hole marked on the back, or in version 1,
+break out the middle part of the Opendime.
+</p><p>
+Once the piece has been broken out, the file contents will
+change and the private key will be revealed in the
+<tt>private-key.txt</tt> file
+and QR code image. There is no way back, and once unsealed, you
+should move the funds into another wallet.
+</p><p>
+Import the private key (<tt>private-key.txt</tt>) into any Bitcoin wallet
+to be able to "sweep up" the funds and spend them as needed.
+</p><p>
+There is also a python program (<tt>advanced/balance.py</tt>) which can be
+used to move the funds out when unsealed.
+</p>
+
+<h4 id="unique-pk">Is the private key unique and secret?</h4>
+<p>
+Yes. Opendime is delivered without any private key. You must give
+it entropy (random numbers) the first time you use it. Once it's
+gotten enough numbers, it will hash them all together and use that
+to pick a random number to use as the private key. At that point,
+the payment address is generated and set in stone.
+</p><p>
+This whole process is very easy: just copy some files into the USB drive.
+When it's got enough bits (256k bytes) it will eject itself and come back 
+with its final payment address.
+</p>
+
+<h4 id="instructions">Where are the instructions?</h4>
+<p>
+Opendime carries usage instructions in English,
+Chinese (中文), Japanese (日本語), Portuguese, French (Français),
+German (Deutsch) and Russian (Русский). They are provided
+as text and HTML files that are internal to the Opendime itself.
+</p>
+
+<h4 id="deposit">How do I see the deposit address?</h4>
+<p>Easy, just plug into any USB capable device and it will pop up a QR code image and a text file with the Bitcoin address. No additional software needs to be installed!</p>
+
+<h4 id="re-seal">Can I re-seal after breaking the seal?</h4>
+<p>No. A permanent change is made inside the flash memory of the processor.</p>
+
+<h4 id="balance-on-phone">Check Opendime's balance on a smart phone?</h4>
+<p>Yes, it can be connected via a USB adapter to Android phones/tables
+(USB OTG adapter cable required) and
+Apple iPads (camera kit USB adapter required).
+It is typically seen a photo card, containing a single image, which is the QR code.
+If your phone can see the HTML file on the Opendime (and allow you to open
+it) then you will be able to check balance and do all the other functions as
+well.</p>
+
+<h4 id="genuine">How do I know I'm seeing a real Opendime</h4>
+
+<p> There are a number of ways to verify the device; first, you can
+click on a link shown in the <tt>index.htm</tt> file present on the
+device.  That link includes a signed message, that only an Opendime
+with access to the private key can generate. With version 2 products
+(rounded type) there is a factory key which can be verified with
+using the factory public key. This proves the hardware was produced
+by us.</p>
+
+<p>
+With our newest hardware (V2), there is a
+dedicated anti-counterfeiting
+chip which holds a secret key assigned by the Opendime factory. We
+publish the matching public key, and so it's easy to verify
+that you have a genuine Opendime in your hands. Learn more by reading
+our technical white paper (link coming soon) which details the cryptography
+involved.
+</p>
+<p>
+We also use clear packaging, so any tampering or other
+funny business is very easy to see in the first place.
+</p>
+
+<h4 id="good-address">How do I know I'm depositing to the correct address?</h4>
+<p>
+The best approach is to connect the Opendime to a number of different computers.
+Each should show the same deposit address. Make note of some or all of the digits
+as you do this test.
+</p>
+
+<h4 id="electrum">Opendime Electrum Plugin</h4>
+<p>
+This plugin supports Opendime from inside Electrum.
+<ul>
+<li>once enabled, a new tab is shown (to left of Console tab).
+<li>click "Find Opendime(s)" and any connected Opendime units are found, and verified
+<li>real time balances for those units are shown in a table
+<li>send funds to, or sweep up funds from, any attached device with a click or two
+<li>new units are loaded with 256k bytes of crypto-quality entropy with one click
+<li>performs in-depth verification of device if libusb (PyUSB) is installed
+<li>verifies factory key and signature (V2 only)
+</ul>
+</p>
+
+<h4 id="address-reuse">What about address reuse? Isn't that a privacy concern?</h4>
+<p> Opendime transactions are a little different from blockchain
+transactions: Whenever two people meet and trade goods or services
+for an Opendime, you could say a transaction has occurred, and yet
+there is nothing recorded on the blockchain.  This is different
+from a normal Bitcoin wallet which makes blockchain records
+continuously, and can create a complex web of connections which can
+later be explored by anyone.</p>
+
+<p>We expect most Opendime units to be loaded once, probably with
+a "round number" of bitcoins, and unloaded exactly once in their
+lifetime.  It's impossible to know what's happened in the
+meantime&mdash;just like a gold coin that has passed through many
+hands over the years.  </p>
+
+<h4 id="other-data">Can I store data on it?</h4>
+
+<p> No. The Opendime is completely read-only and cannot be changed,
+except by unsealing it.</p>
+
+<h4 id="durability">What is the expected lifetime of the device?</h4>
+
+<p>Like most electronic devices, if stored properly it should last decades.
+</p>
+
+<p>The expected reliability of the part that stores the private key as described on the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf">ATSAMD21E17 datasheet is between 25-100 years [page 1014]</a></p>
+
+<p>For long term HODL/Storage and large amounts we recommend <a href="http://coldcardwallet.com">COLDCARD Hardware Wallet</a> a ultra-secure Bitcoin wallet also made by us.
+
+<h4 id="pk-gen">Can I use it as a secure method for private key generation</h4>
+
+<p>Opendime is a very safe and effective way of generating uncompromised private key.</p>
+
+<h4 id="computer">Can I use it on an untrusted computer?</h4>
+
+<p>Yes, it's safe to setup, verify and load an Opendime on an
+untrusted computer.  The private key is generated inside, and does
+not leave the Opendime itself regardless of any malware and keyloggers
+that may be present on the attached computer. It can also be used
+on iPads and tablets, which typically see the Opendime as a single
+photo of a QR code, ready for scanning.
+</p>
+<p>
+We recommend using a trusted computer after it is unsealed since the
+private key is in the open at that point. You would need to trust
+that computer anyway, since you are sending the funds from the Opendime
+to some other Bitcoin address and you don't want that to be manipulated.
+</p>
+
+<h4 id="no-password">What if I forget my password?</h4>
+
+<p>There is no password, nor seed phrase!
+It's locked in until physically unsealed.
+</p>
+
+<h4 id="link">How do I know if the verify link is not fake?</h4>
+
+<p>There is no way to input data as the drive is read-only. Also, a
+different random nonce is signed each time you power up device.
+You can also plug/re-plug to get a new nonce and matching signature.
+The Electrum plugin can do additional verification over the USB interface that are not
+possible via the MS-DOS filesystem. All verification code is open-source Python code.
+</p>
+
+<h4 id="decentralized">Is this a central service?</h4>
+
+<p> There is never any need use any centralized service with Opendime.
+It does provide convenient links to existing third-party "block
+chain explorer" services and this site (opendime.com), but there
+is absolutely no need to use those.</p>
+
+<p>Any bitcoin wallet that is monitoring the blockchain can be used
+with Opendime. Opendime itself even carries a simple python program
+that can be used to verify balance and spend funds (once unsealed).
+That python code uses a diverse set of public services for blockchain
+access and does not require API keys or other identifying features.</p>
+
+<h4 id="provability">How do I know the manufacturer doesn't know the private key?</h4>
+
+<p>When you first plug in a new Opendime, it has no private key.
+It shows up as a writable drive and the user must copy files onto
+the drive. They are immediately forgotten, but the the file contents
+are hashed (SHA256). It's the hashed output of that which forms the private
+key (along with the unit serial number and entropy we
+derive from the environment). That happens as soon as 256k worth
+of bytes have been written to the drive. The private key is created
+and the drive "ejects itself" and comes back read-only and in
+"normal" mode... only the public key is shown until unsealed.</p>
+
+<h4 id="provability2">But Opendime could be generating private keys that look random,
+but are all from the same HD (BIP 32) tree which they control?</h4>
+
+<p>You can actually prove to yourself that we <b>cannot</b> know the private key.
+The process for this verification can only be done after the unit is
+unsealed, and requires a verbatim copy of the original data written.
+Plus, you'll need to precisely
+control what is written to the drive, which cannot be done with higher-level
+commands to load entropy (so drag-n-drop will not work).
+</p><p>
+In summary, the process is
+as follows: take a new Opendime, power it up and precisely
+write 256k of known bytes to it (ie. use <tt>dd</tt>
+to write it starting at block zero). The unit will pick a private key
+as normal. Unseal the Opendime (poke the hole), and run the
+file <tt>advanced/rngverify.py</tt> with Python.
+That file is a simple program that contains the (previously) unknown
+entropy value from the Opendime, and it checks that your entropy is
+hashed into the secret key. Effectively, it re-creates the entire key-picking
+process and to demonstrate we used exactly that process.
+Because it's just 75 lines of python, it's very easy to audit.
+</p>
+<p>
+As you will see, the secret exponent of the private key is the double-SHA256
+of these values concatenated: (the 256k bytes from you) + (128-bit serial number of
+the Opendime in base32) + (32-byte nonce picked by Opendime's RNG).
+</p>
+<p>
+See our <a href="https://github.com/opendime/opendime">source code on github</a> for
+a complete and executable example.
+</p>
+
+<h4 id="third-party">If I get an Opendime initialized by someone else, they will
+know the entropy (256k bytes) used, so maybe they know the private key?</h4>
+
+<p>
+No. The Opendime itself still provides 256 bits of high-quality
+entropy into the equation described in the previous question. The
+device picks its contribution to the private key very carefully.
+It's a SHA256 hash of a few things including, but not limited to:
+
+<ul>
+  <li> 256-bits taken from the FIPS-certified True RNG inside the security element
+  <li> a few bits of time-based uncertainty from events on the USB bus
+  <li> additional entropy loaded at the factory during production (again from a certified TRNG)
+</ul>
+</p>
+
+<h4 id="casascius">How is Opendime different from Casascius or other physical coins?</h4>
+
+<p>Opendime is different
+from <a href="https://casascius.com/">Physical Bitcoins by Casascius</a>,
+and other 'metal bitcoin' products, because the private key
+is never known by the manufacturer or mint.
+With Opendime, the key is generated at the time of setup by the user,
+and is not known by anyone, anywhere&mdash;not even the first owner.
+</p>
+
+<h4 id="message-signing">Can I use an Opendime to sign a message?</h4>
+<p>Yes, an Opendime can sign short messages (20/32 chars), either with the
+bitcoin private key or the X.509 factory certificate's key.
+<code>trustme.py</code> already does this using a random nonce as the message body.
+At this time, we don't provide any tools for signing user-defined messages, but such a
+tool could be written using our 
+<a href="https://github.com/opendime/opendime/blob/master/whitepapers/ep0-protocol.md">proprietary
+USB protocol running on EP0</a>.
+
+          </div>
+      </div>
+    </div>
+
+
+
+{% endblock page %}
