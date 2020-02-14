@@ -1,4 +1,4 @@
-title: Settings
+title: Settings Menu
 ordering: 10
 
 The settings menu, contains a number of items which are essentially preferences.
@@ -76,7 +76,7 @@ payment addresses. Only developers and other users of TestNet will need this.
 
 ![pin-menu](img/snap-pin-menu.png){.snap}
 
-### Different Kinds of PIN Codes
+## Different Kinds of PIN Codes
 
 There are two "wallets" in each Coldcard, however, the primary PIN
 should be considered the "owner" of the Coldcard. For some
@@ -88,7 +88,7 @@ your funds. To login with the secondary pin, after entering the
 PIN prefix, while looking at the anti-phishing words, press 2 instead
 of OK. 
 
-#### Duress Wallets
+### Duress Wallets
 
 Both the main and secondary wallets have a derived "duress" wallet.
 The duress wallet is intended as a personal safety feature: you
@@ -101,7 +101,7 @@ ways to detect the difference.
 
 [Start here](https://github.com/Coldcard/firmware/blob/master/docs/pin-entry.md#recovery-of-funds-from-duress-wallet) to learn more about the technical details.
 
-#### Brickme PIN
+### Brickme PIN
 
 There is also a PIN number which we call the "brickme PIN". If that
 PIN code is used at any prompt, the Coldcard destroys itself. It
@@ -112,13 +112,13 @@ Please be careful with the brickme PIN. The destruction process is
 quick and irreversible. The Coldcard should be discarded as e-waste
 and cannot be reused.
 
-### Choose Diverse PIN Codes
+## Choose Diverse PIN Codes
 
 Please use unique PIN codes for each feature. In theory the duress
 PINs (main and secondary) could be the save value, and the main and
 secondary PIN's could also match each other, but that is not recommended.
 
-### Forgotten PIN Code
+## Forgotten PIN Code
 
 If you've forgotten your PIN, we cannot help you. Even if you gave
 us the Coldcard, and we put all our resources into it, we cannot

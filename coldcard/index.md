@@ -64,7 +64,7 @@ ordering: 100
 - Wallet [software download (ie. Electrum)](downloads)
 
 
-# Sections
+# User Guide Chapters
 
 {% for p in PAGES %}
 1. [{{p.menu_title}}]({{p.path}})

@@ -102,12 +102,12 @@ with the wallet seed words.
 
 Backups can also be verified (checked for completeness) from the menu system.
 
-[Read more in our docs about backups.](/docs/backups)
+[Read more in our docs about backups.](backups)
 
 
 ## Can Coldcard import an **encrypted** BIP39 seed phrase?
 
-Yes, Coldcard [supports BIP39 passphrases](docs/passphrase).
+Yes, Coldcard [supports BIP39 passphrases](passphrase).
 
 This unlocks approximately 5.9e197 more wallets based on your seed phrase.
 

@@ -11,7 +11,7 @@ title: Upgrade Firmware
 - Security Bugfix: Fixed a multisig PSBT-tampering issue, that could allow a MitM to
   steal funds. **Please upgrade ASAP**.
 - Enhancement: Sign a text file from MicroSD. Input file must have extension .TXT and
-  contain a single line of text. Signing key subpath can also provided on the second line.
+  contain a single line of text. Signing-key subpath can be provided on the second line.
 - Enhancement: Now shows the change outputs of the transaction during signing
   process. This additional data can be ignored, but it is useful for those who
   wish to verify all parts of the new transaction.
