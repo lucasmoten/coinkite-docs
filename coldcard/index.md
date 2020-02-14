@@ -59,7 +59,7 @@ ordering: 100
 
 - How to install and use the [command line (CLI) tools.](cli)
 
-- [Trouble-shooting](trouble) tips and tricks.
+- Read the [Frequently Asked Questions (FAQ)](faq) and [Trouble-shooting](trouble) tips and tricks.
 
 - Wallet [software download (ie. Electrum)](downloads)
 

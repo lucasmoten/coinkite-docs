@@ -67,7 +67,7 @@ can [reset the light to green](upgrade#bless-firmware) easily.
 
 ## See also the FAQ
 
-The [Coldcard FAQ](/faq) may also have the answer to your question.
+The [Coldcard FAQ](faq) may also have the answer to your question.
 
 ## Got more?
 
