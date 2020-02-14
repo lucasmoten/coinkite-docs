@@ -15,7 +15,7 @@ ordering: 100
 
 
 - Wasabi
-    - [Video: Using Coldcard with **Wasabi Walelt** - BTC Sessions](https://www.youtube.com/watch?v=kocEpndQcsg)
+    - [Video: Using Coldcard with **Wasabi Wallet** - BTC Sessions](https://www.youtube.com/watch?v=kocEpndQcsg)
 	- [Video: TFTC Guides: Coldcard + **Wasabi** Wallet Basic Setup and Usage - Matt Odell](https://www.youtube.com/watch?v=sM2uhyROpAQ)
 
 
