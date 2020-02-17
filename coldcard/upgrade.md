@@ -39,7 +39,7 @@ and GPG. The commands are:
     curl https://pgp.key-server.io/download/0xA3A31BAD5A2A5B10 | gpg --import
     gpg --verify signatures.txt
 
-Please look for signing key: `4589779ADFC14F3327534EA8A3A31BAD5A2A5B10`
+Please look for signing key: `[4589779ADFC14F3327534EA8A3A31BAD5A2A5B10](https://pgp.key-server.io/pks/lookup?op=get&search=0xA3A31BAD5A2A5B10)`
 
 Don't forget to run SHA256 over the DFU files themselves, because that compares
 your actual file contents to what we signed.
