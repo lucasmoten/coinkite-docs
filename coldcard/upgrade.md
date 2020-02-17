@@ -44,6 +44,8 @@ Please look for signing key: `[4589779ADFC14F3327534EA8A3A31BAD5A2A5B10](https:/
 Don't forget to run SHA256 over the DFU files themselves, because that compares
 your actual file contents to what we signed.
 
+    sha256sum 2019-12-19T1623-v3.0.6-coldcard.dfu
+
 Github.com is also protecting us because it verifies on all commits
 against the developer's public keys, and keeps a history of changes.
 
