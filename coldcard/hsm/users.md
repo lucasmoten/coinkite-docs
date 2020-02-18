@@ -1,91 +1,15 @@
-title: HSM Mode Features
-order: 89
+title: User Management
+order: 20
+hidden: 1
 
 [_(new in v3.1.0, requires Mk3)_](upgrade)
 
-# HSM - Hardware Security Module
 
-
-"HSM Mode" is the name we use when speaking about the Coldcard signing
-transactions without a person physically present. It's an advanced
-feature which requires additional software to setup and enable.
-
-HSM mode can be enabled after a "policy file" has been uploaded and
-confirmed by the user. That policy file establishes what the Coldcard
-will and won't do in HSM mode, and what further authorization steps
-may be needed for each spending operation.
-
-Once the Coldcard has gone into "HSM Mode", it must be powered-down
-before it can operate normally again.
-
-If a Coldcard has an HSM policy file already installed, you are
-given an opportunity to enable it each time the Coldcard is powered,
-just after the master PIN is entered and before the USB connection
-is enabled. It is also available in the main menu, as "Start HSM Mode".
-
-In HSM Mode, the Coldcard screen looks like this:
-
-![hsm-mode example](img/hsm-mode.gif){.snap}
-
-No transaction information is shown on the screen, although a
-progress bar and one-word description of current activity (ie. "Signing...")
-is shown along the bottom of the screen.
-
-!!! warning "Important"
-
-    Your funds in the Coldcard will only be as safe as your HSM
-    Policy allows! We recommend a very low velocity (ie. 1BTC/day)
-    and a very limited whitelist of one or two destination addresses.
-
-    _Design your policy working from the assumption that your CKBunker may be compromised someday._
-
-### Further Reading
-
-1. [Local Confirmation Codes]
-2. [User Management]
-3. [HSM Policy Rules]
-3. [CLI Usage examples]
-3. [Security Notes]
-
-## Local Confirmation Codes
-
-The only interaction possible with a Coldcard in HSM mode is to
-enter a local authorization code. This can be required by specific
-HSM policy rules, and perhaps not all transactions would require
-local authorization.
-
-As you press the 6-digit numeric code, the digits are shown in the
-top right part of the screen. Press OK to apply them, or X to clear
-and start over. Codes are always 6 digits. There is no indication
-the code worked or failed, in part because it isn't tested until
-the PSBT is given for signing, which could be some time later.
-
-![entering local code](img/hsm-local-code.png){.snap}
-
-The required 6-digit code is a combination of the specific bytes
-of the PSBT file being approved, and also a salt value picked by
-the Coldcard.  If you have the PSBT file to be approved, you can
-use the `ckcc local-conf` command to show the code needed:
-
-```sh
-% ckcc local-conf debug/attempt.psbt
-Local authorization code is:
-	160681
-
-```
-
-However, most will use the CKBunker, which reveals the local code as shown here:
-
-![bunker shows local code](img/bunker-local-conf.png)
-
-A different code will be required for each attempted signing (because
-Coldcard changes the salt value) and for every PSBT file (because
-the hash of the PSBT is a factor in this number).
-
-## Coldcard User Management
+## User Management
 
 To support use of the Coldcard in HSM mode, the Coldcard can hold
-usernames and their shared secrets for authentication purposes.
+usernames and their shared secrets for authentication purposes. At 
+present, this is only useful for use in HSM mode.
 
 Two methods are offered: shared password (ie. classic "something
 you know") or TOTP (time-based one-time pass) 2FA authentication,
@@ -220,15 +144,4 @@ you must provide
 Full code for the PBKDF2 step can be found in
 [hash_password() in ckcc/client.py](https://github.com/Coldcard/ckcc-protocol/blob/master/ckcc/client.py) and HMAC step in
 [user_auth() in cli.py](https://github.com/Coldcard/ckcc-protocol/blob/master/ckcc/cli.py)
-
-
-
-## Spending Rules
-
-The HSM policy is established by a simple JSON file, which states
-the rules for which spending transactions should be signed automatically
-by the Coldcard. It is uploaded to the Coldcard, which renders
-summary of the policy for you to approve on-screen.
-
-The file has two parts: global settings and a number of "rules".
 

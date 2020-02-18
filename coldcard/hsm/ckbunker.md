@@ -1,7 +1,9 @@
 title: CK Bunker
+hidden: 0
 order: 90
 
-## CK Bunker
+## CKBunker
+
 
 ### Usage Ideas
 
@@ -22,3 +24,4 @@ Python library and command line tool for communicating with your Coldcard over U
 - Storage Locker™:  ~400 bytes of  secret storage in the Mk3 secure element. CK Bunker uses this to hold secret that encrypts bunker's settings (when at rest) such as the private key for  Hidden Service (= Tor address). So corrupt LEA can't impersonate your bunker after capture.
 
 - Heard you like co-signing! All the Bunker/HSM features work with multisig (P2SH / P2WSH) so maybe you're automatically co-signing a complex multisig from some @CasaHODL quorum.
+
