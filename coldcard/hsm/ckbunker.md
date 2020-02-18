@@ -1,11 +1,8 @@
 title: CK Bunker
-hidden: 0
+hidden: 1
 order: 90
 
-## CKBunker
-
-
-### Usage Ideas
+# Usage Ideas
 
 - CKBunker connects via USB to computer on Tor (onion network). Later you come in via Tor and upload PSBT file. CC signs it based on complex set of business rules (HSM policy), incl. velocity rules, destination whitelist, and authorizing users. Simple.
 

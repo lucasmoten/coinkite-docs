@@ -129,17 +129,18 @@ Obviously, you are trusting the USB-attached computer in the password
 case, but that risk does not exist for the 2FA case, as each code is
 useful only once. We generally recommend 2FA instead of fixed passwords.
 
-In HSM mode, the password response includes a hash of the PSBT being
-approved. Therefore, it is possible to hash up your password on a remote
-machine, before submitting it over USB to the Coldcard. In that
-sense, it is also a one-time password, and interception on the
-USB-connected computer would not help attackers.
+When authorizing a PSBT, the password response includes a hash of
+the PSBT being approved. Therefore, it is possible to hash-up your
+password on a remote machine, before submitting it over USB to the
+Coldcard. In that sense, it is also a one-time password, and
+interception on the USB-connected computer would not help attackers.
 
-The new password is key-stretching using PBKDF2(SHA256) (with a salt
+The new password is key-stretched using PBKDF2(SHA256) (with a salt
 value derived from the serial number of the specific Coldcard involved) before
 being transmitted over USB. When proving your knowledge of the password,
-you must provide
-`HMAC(secret=PBKDF2(password salt=SHA256(...+serial_number)), msg=SHA256(psbt_file))`
+you must provide:
+
+    HMAC(secret=PBKDF2(password, salt=SHA256(...+serial_number)), msg=SHA256(psbt_file))
 
 Full code for the PBKDF2 step can be found in
 [hash_password() in ckcc/client.py](https://github.com/Coldcard/ckcc-protocol/blob/master/ckcc/client.py) and HMAC step in
