@@ -60,4 +60,4 @@ However, most will use the CK-Bunker, which reveals the local code as shown here
 
 A new code will be required for each attempted signing (because
 Coldcard changes the salt value) and for every PSBT file (because
-the hash of the PSBT is a factory in this number).
+the hash of the PSBT is a factor in this number).
