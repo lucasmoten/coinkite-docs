@@ -2,6 +2,19 @@ title: Upgrade Firmware
 
 <em><a href="#upgradehow" >Learn how to upgrade here ></a></em>
 
+## Upgrading Step-by-step Guide
+
+1. Download and verify the latest firmware release.
+2. Save the `20...-coldcard.dfu` firmware file onto a SD card.
+3. Plug the SD card into your ColdCard.
+4. Power up your ColdCard and unlock it with your PIN.
+5. Go to the `Advanced > Upgrade` menu and click on `From SD Card`. 
+6. After the confirmation dialog, ColdCard will upgrade and reboot (slow).
+7. Type in your PIN again. Verify new version running with:<br>
+   `Advanced > Upgrade > Show Version`
+8. If you powered down during this process, to get a green light again, you may need to use:<br>
+   `Advanced > Upgrade > Bless Firmware`
+
 ## Current Version of Coldcard Firmware &mdash; Version 3.0.6
 
 [2019-12-19T1623-v3.0.6-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2019-12-19T1623-v3.0.6-coldcard.dfu) released Dec 19, 2019.
@@ -39,10 +52,12 @@ and GPG. The commands are:
     curl https://pgp.key-server.io/download/0xA3A31BAD5A2A5B10 | gpg --import
     gpg --verify signatures.txt
 
-Please look for signing key: `4589779ADFC14F3327534EA8A3A31BAD5A2A5B10`
+Please look for signing key: `[4589779ADFC14F3327534EA8A3A31BAD5A2A5B10](https://pgp.key-server.io/pks/lookup?op=get&search=0xA3A31BAD5A2A5B10)`
 
 Don't forget to run SHA256 over the DFU files themselves, because that compares
 your actual file contents to what we signed.
+
+    sha256sum 2019-12-19T1623-v3.0.6-coldcard.dfu
 
 Github.com is also protecting us because it verifies on all commits
 against the developer's public keys, and keeps a history of changes.
