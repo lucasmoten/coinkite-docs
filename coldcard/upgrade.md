@@ -2,15 +2,18 @@ title: Upgrade Firmware
 
 <em><a href="#upgradehow" >Learn how to upgrade here ></a></em>
 
-## Upgrading step-by-step
+## Upgrading Step-by-step Guide
 
 1. Download and verify the latest firmware release.
-2. Save the .dfu firmware file on a SD card.
-3. Plug in the SD card into your ColdCard.
-4. Power up your ColdCard and unlock it with the pin.
-5. Go to the `Upgrade` menu and click on `From SD Card`, after the dialog, ColdCard will upgrade and reboot.
-6. Poewr up your ColdCard and type in the PIN again.
-7. Go to the `Upgrade` menu and click `Bless Firmware`.
+2. Save the `20...-coldcard.dfu` firmware file onto a SD card.
+3. Plug the SD card into your ColdCard.
+4. Power up your ColdCard and unlock it with your PIN.
+5. Go to the `Advanced > Upgrade` menu and click on `From SD Card`. 
+6. After the confirmation dialog, ColdCard will upgrade and reboot (slow).
+7. Type in your PIN again. Verify new version running with:<br>
+   `Advanced > Upgrade > Show Version`
+8. If you powered down during this process, to get a green light again, you may need to use:<br>
+   `Advanced > Upgrade > Bless Firmware`
 
 ## Current Version of Coldcard Firmware &mdash; Version 3.0.6
 
