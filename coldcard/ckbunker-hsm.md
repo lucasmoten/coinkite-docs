@@ -48,8 +48,8 @@ is shown along the bottom of the screen.
 !!! warning "Important"
 
     Your funds in the Coldcard will only be as safe as your HSM
-    Policy allows! We recommend a very low velocity (ie. less than
-    0.25BTC/day) and a whitelist of only one or two addresses.
+    Policy allows! We recommend a very low velocity (1BTC/day)
+    and a whitelist of only one or two addresses.
 
     _Design your policy working from the assumption the attached computer
     may be compromised someday._

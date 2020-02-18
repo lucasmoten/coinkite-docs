@@ -55,6 +55,7 @@ ordering: 100
 
 - [Multisig](multisig) features.
 
+
 - How [Encrypted Backups](backups) work on the Coldcard.
 
 - How to install and use the [command line (CLI) tools.](cli)
@@ -66,12 +67,13 @@ ordering: 100
 
 # User Guide Chapters
 
-{% for p in PAGES %}
+{% for p in PAGES if not p.hidden %}
 1. [{{p.menu_title}}]({{p.path}})
 {% endfor %}
 
 # Advanced Topics
 
+- [HSM Mode and the CKBunker](ckbunker-hsm) to permit automated signing and remote access.
 - Your can view and download the [source code on Github](https://github.com/coldcard/firmware).
 - Long and detailed discussion of 
   [PIN codes and the security element]({{DOCS}}/pin-entry.md) that holds the real secrets.
