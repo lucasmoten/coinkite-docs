@@ -68,7 +68,10 @@ ordering: 100
 # User Guide Chapters
 
 {% for p in PAGES if not p.hidden %}
-1. [{{p.menu_title}}]({{p.path}})
+1. [{{p.menu_title}}]({{p.url}})
+{%- for sd in  p.childern(PAGES) %}
+    - [{{sd.menu_title}}]({{sd.url}})
+{%- endfor %}
 {% endfor %}
 
 # Advanced Topics

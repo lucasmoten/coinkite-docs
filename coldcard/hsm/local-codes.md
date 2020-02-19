@@ -1,11 +1,6 @@
-title: Local Codes
-order: 10
+title: Local Confirmation Codes
+ordering: 10
 hidden: 1
-
-
-![hsm-mode example](img/hsm-mode.gif){.snap}
-
-## Local Confirmation Codes
 
 The only interaction possible with a Coldcard in HSM mode is to
 enter a local authorization code. This can be required by specific

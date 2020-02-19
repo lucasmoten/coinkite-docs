@@ -1,11 +1,7 @@
 title: User Management
-order: 20
+ordering: 20
 hidden: 1
 
-[_(new in v3.1.0, requires Mk3)_](upgrade)
-
-
-## User Management
 
 To support use of the Coldcard in HSM mode, the Coldcard can hold
 usernames and their shared secrets for authentication purposes. At 
@@ -30,13 +26,14 @@ due to limited screen space, there isn't room for the meta data
 such as username or specific Coldcard number: your app will only
 show "CC".
 
-It is also possible to send a user-generated shared secret (or
-password) over USB, in which case, the QR code is not shown. This
-requires trust of the attached computer at this stage.
+It is possible to send a user-generated shared secret (or password)
+over USB, in which case, the QR code is not shown. This requires
+trust of the attached computer during this operation, as we do not
+recommend it.
 
 The CKBunker can make creating users very easy, alternatively, and
 as a sample implementation for others, the [CLI program `ckcc`](cli) can 
-be used.
+be used as well.
 
 ### Creating New Users with CLI
 

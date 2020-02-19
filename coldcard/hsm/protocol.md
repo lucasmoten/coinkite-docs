@@ -1,4 +1,5 @@
 title: USB Protocol for HSM Mode
+ordering: 99
 hidden: 1
 
 # New Commands
@@ -54,7 +55,7 @@ When the HSM is not enabled, you will get a short response like this:
 ```
 
 Once enabled, the result depends heavily on the [`priv_over_ux`](rules) setting,
-and the other values in your HSM policy.
+and the many other values in your HSM policy.
 
 ```sh
 % ckcc hsm
@@ -100,7 +101,7 @@ With `priv_over_ux` enabled, the status response is minimal:
 Here are the fields of the status response.
 
 - `active`: is the HSM mode activated?
-- `chain`: typically BTC or XTN (testnet)
+- `chain`: either BTC or XTN (testnet)
 - `last_refusal`: short text explanation of why the last request failed
 - `approvals`, `refusals`: counts of number of PSBT or msg signings done
 - `period`: number of minutes in the period (from policy file)

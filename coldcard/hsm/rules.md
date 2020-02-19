@@ -1,5 +1,5 @@
 title: Spending Rules
-order: 30
+ordering: 30
 hidden: 1
 
 ## HSM Policy JSON File
@@ -225,4 +225,93 @@ The CKBunker can operate in either mode, but you will find it harder
 to use, as it's not possible to know where you stand in terms of 
 velocity spending and user authorization.
 
+# Example JSON Policy File
+
+Here is a sample policy file, ready to be uploaded into a Coldcard.
+
+It has three rules:
+
+- local user can authorize up to 1BTC per txn (by themselves)
+- either alice or bob can authorize up to 1BTC per 4 hour period
+- allow any txn that sends to address `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
+
+```json
+{
+  "never_log": true,
+  "must_log": false,
+  "priv_over_ux": false,
+  "boot_to_hsm": null,
+  "period": 240,
+  "set_sl": "my secret here",
+  "allow_sl": 13,
+  "rules": [
+    {
+      "whitelist": [],
+      "per_period": null,
+      "max_amount": 100000000,
+      "users": [],
+      "local_conf": true,
+      "wallet": null
+    },
+    {
+      "whitelist": [],
+      "per_period": 100000000,
+      "max_amount": null,
+      "users": [
+        "alice",
+        "bob"
+      ],
+      "min_users": 1,
+      "local_conf": false,
+      "wallet": null
+    },
+    {
+      "whitelist": [
+        "bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq"
+      ],
+      "per_period": null,
+      "max_amount": null,
+      "users": [],
+      "local_conf": false,
+      "wallet": null
+    }
+  ],
+  "msg_paths": [
+    "any"
+  ],
+  "share_xpubs": [
+    "m/84'/0'/0'/*"
+  ],
+  "share_addrs": [
+    "m/84'/0'/0'/*"
+  ],
+  "notes": "Semper Fi"
+}
+```
+
+The Coldcard will show this text to summarize the policy:
+
+```coldstyle
+=-=
+Semper Fi
+=-=
+
+Transactions:
+- Rule #1: Up to 1 XTN per txn will be approved if local user confirms
+- Rule #2: Up to 1 XTN per period may be authorized by any one user: alice OR bob
+- Rule #3: Any amount will be approved provided it goes to: bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq
+
+Velocity Period:
+ 240 minutes
+ = 4 hrs
+
+Message signing:
+- Allowed if path matches: (any path)
+
+Other policy:
+- No logging.
+- Storage Locker will be updated, and can be read 13 times.
+- XPUB values will be shared, if path matches: m OR m/84'/0'/0'/*.
+- Address values values will be shared, if path matches: m/84'/0'/0'/*.
+```
 

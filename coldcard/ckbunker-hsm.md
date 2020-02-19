@@ -1,5 +1,6 @@
-title: CKBunker and HSM Mode
+title: HSM Mode and CKBunker
 order: 89
+parentof: hsm
 
 [_(new in v3.1.0, requires Mk3)_](upgrade)
 
@@ -59,10 +60,10 @@ is shown along the bottom of the screen.
 1. [User Management:](hsm/users) passwords and 2FA codes implemented in Coldcard.
 2. [HSM Policy Rules:](hsm/rules) how much can be moved, where, and authorized by whom.
 3. [Local Confirmation Codes:](hsm/local-codes) local user interactions at the Coldcard's location.
-3. [CLI Usage examples:](hsm/cli) for use without the CKBunker.
 3. [Security Notes:](hsm/security) understand our security model and related thinking.
 
 ### For Implementors
 
 1. [USB Protocol support for HSM features](hsm/protocol)
+3. [CLI Usage examples:](hsm/cli) for use without the CKBunker.
 
