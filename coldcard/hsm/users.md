@@ -18,7 +18,7 @@ help of CKBunker or `ckcc` programs. However, once the user is
 established, you may view it and remove them from the menu system, in 
 Advanced under "User Management".
 
-The best practise is for the Coldcard to generate the password or
+The best practice is for the Coldcard to generate the password or
 TOTP secret and display it on-screen in a QR code. If you are using
 a TOTP app, such as Google Authenticator or FreeOTP, then you can
 scan the screen of the Coldcard to install the code. Unfortunately,

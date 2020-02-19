@@ -26,7 +26,7 @@ global (top-level) values are as follows:
 - `allow_sl`: (integer) number of times the storage locker can be read per boot-up
 
 - `boot_to_hsm`: if defined, six-digit numeric code used to escape boot-to-HSM feature
-- `priv_over_ux`: (bool) reduce chattyness of status responses in HSM mode, making UX harder
+- `priv_over_ux`: (bool) reduce chattiness of status responses in HSM mode, making UX harder
 
 - `rules`: list of objects, see below. Each rule is checked in order given in this list.
 
@@ -69,7 +69,7 @@ Multiple spending rules can be defined. The system scans the rules
 starting from the first one, and will test each rule. The first
 rule that is satisfied is applied and following rules are not considered.
 
-We recommend puting the most narrow rules first. Catch-all rules, which 
+We recommend putting the most narrow rules first. Catch-all rules, which 
 might move more money should be later in the list.
 
 ## Max Transaction Amount 
@@ -90,7 +90,7 @@ using this rule in the period.
 
 You can list username in the `users` field. If defined the `min_users` controls
 how many of those are required. By default (if `min_users` isn't defined), all users
-listed must confirm the operation. You can acheive 2-of-5 and similar setups
+listed must confirm the operation. You can achieve 2-of-5 and similar setups
 using `min_users`. All users listed must already be defined on the Coldcard
 before the policy is activated.
 
@@ -130,7 +130,7 @@ warnings. Typically this is overly-large fees or weird path
 derivations. Since we don't expect warnings, any transactions with
 a warning is normally refused.
 
-## Mesage Signing
+## Message Signing
 
 To enable text message signing, list one or more BIP32 derivation paths in `msg_paths`.
 You can use the special value `"any"` to allow all signing. You may also use a star
@@ -219,7 +219,7 @@ shared over [USB in the HSM status response](protocol):
 - how much each rule has spent in current period
 - system uptime
 - list of usernames
-- number of users which have provided auth creds for current PSBT
+- number of users which have provided auth credentials for current PSBT
 
 The CKBunker can operate in either mode, but you will find it harder
 to use, as it's not possible to know where you stand in terms of 
@@ -232,7 +232,7 @@ Here is a sample policy file, ready to be uploaded into a Coldcard.
 It has three rules:
 
 - local user can authorize up to 1BTC per txn (by themselves)
-- either alice or bob can authorize up to 1BTC per 4 hour period
+- either Alice or Bob can authorize up to 1BTC per 4 hour period
 - allow any txn that sends to address `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
 
 ```json

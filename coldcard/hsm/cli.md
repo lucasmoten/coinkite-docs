@@ -4,8 +4,17 @@ title: CLI Commands for HSM
 
 The `ckcc` helper program, or any other program which can speak
 Coldcard's USB protocol, and be used in HSM mode. Once HSM mode is
-started, the usual commands are used, with the exception of a number
-of commands that are disabled.
+started, the usual signing commands are used, but without the need
+for user interaction. There are a few commands that are disabled
+in HSM mode, but those are not involved in PSBT or message signing.
+
+To authorize PSBT signing, you may need to use the "auth" command,
+which transmits a OTP (6 digit) code, or hashed password to the Coldcard.
+
+If the local operator must confirm, then you will need to calculate the
+appropriate code to be entered. Use `ckcc local-conf` for this.
+
+Fetch the status of the HSM using `ckcc hsm`.
 
 ## Example Sequence
 
@@ -65,7 +74,6 @@ You refused permission to do the operation
 
 
 % ckcc hsm
-{
 ...
  'last_refusal': "Rejected: rule #1: local operator didn't confirm, rule #2: "
                  'need user(s) confirmation, rule #3: non-whitelisted address: '
