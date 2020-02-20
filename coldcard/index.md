@@ -15,7 +15,7 @@ ordering: 100
 
 
 - Wasabi
-    - [Video: Using Coldcard with **Wasabi Walelt** - BTC Sessions](https://www.youtube.com/watch?v=kocEpndQcsg)
+    - [Video: Using Coldcard with **Wasabi Wallet** - BTC Sessions](https://www.youtube.com/watch?v=kocEpndQcsg)
 	- [Video: TFTC Guides: Coldcard + **Wasabi** Wallet Basic Setup and Usage - Matt Odell](https://www.youtube.com/watch?v=sM2uhyROpAQ)
 
 
@@ -55,6 +55,7 @@ ordering: 100
 
 - [Multisig](multisig) features.
 
+
 - How [Encrypted Backups](backups) work on the Coldcard.
 
 - How to install and use the [command line (CLI) tools.](cli)
@@ -66,12 +67,16 @@ ordering: 100
 
 # User Guide Chapters
 
-{% for p in PAGES %}
-1. [{{p.menu_title}}]({{p.path}})
+{% for p in PAGES if not p.hidden %}
+1. [{{p.menu_title}}]({{p.url}})
+{%- for sd in  p.childern(PAGES) %}
+    - [{{sd.menu_title}}]({{sd.url}})
+{%- endfor %}
 {% endfor %}
 
 # Advanced Topics
 
+- [HSM Mode and the CKBunker](ckbunker-hsm) to permit automated signing and remote access.
 - Your can view and download the [source code on Github](https://github.com/coldcard/firmware).
 - Long and detailed discussion of 
   [PIN codes and the security element]({{DOCS}}/pin-entry.md) that holds the real secrets.
