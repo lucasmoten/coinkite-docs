@@ -5,6 +5,23 @@ ordering: 95
 
 ## Obsolete Versions
 
+## Version 3.0.6 - Dec 19, 2019
+            
+- Security Bugfix: Fixed a multisig PSBT-tampering issue, that could allow a MitM to
+  steal funds. **Please upgrade ASAP**.
+- Enhancement: Sign a text file from MicroSD. Input file must have extension .TXT and
+  contain a single line of text. Signing-key subpath can be provided on the second line.
+- Enhancement: Now shows the change outputs of the transaction during signing
+  process. This additional data can be ignored, but it is useful for those who
+  wish to verify all parts of the new transaction.
+- Enhancement: PSBT files on MicroSD can now be provided in base64 or hex encodings. Resulting
+  (signed) PSBT will be written in same encoding as the input PSBT.
+- Bugfix: crashed on entry into the Address Explorer (some users, sometimes).
+- Bugfix: add blank line between addresses shown if sending to multiple destinations.
+- Bugfix: multisig outputs were not checked to see if they are change (would have been
+  shown as regular outputs), if the PSBT did not have XPUB data in globals section.
+- NOTE: This is the final version to support Mk1 hardware.
+
 ## Version 3.0.5 - Nov 25, 2019
 
 - Address explorer can show QR code for any address (Mk3 only). Press 4 to view. Once

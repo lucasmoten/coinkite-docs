@@ -15,29 +15,35 @@ title: Upgrade Firmware
 8. If you powered down during this process, to get a green light again, you may need to use:<br>
    `Advanced > Upgrade > Bless Firmware`
 
-## Current Version of Coldcard Firmware &mdash; Version 3.0.6
+## Current Version of Coldcard Firmware &mdash; Version 3.1.0
 
-[2019-12-19T1623-v3.0.6-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2019-12-19T1623-v3.0.6-coldcard.dfu) released Dec 19, 2019.
+[2020-02-20T1448-v3.1.0-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-20T1448-v3.1.0-coldcard.dfu) released Feb 20, 2020.
 
-## Version 3.0.6 - Dec 19, 2019
-            
-- Security Bugfix: Fixed a multisig PSBT-tampering issue, that could allow a MitM to
-  steal funds. **Please upgrade ASAP**.
-- Enhancement: Sign a text file from MicroSD. Input file must have extension .TXT and
-  contain a single line of text. Signing-key subpath can be provided on the second line.
-- Enhancement: Now shows the change outputs of the transaction during signing
-  process. This additional data can be ignored, but it is useful for those who
-  wish to verify all parts of the new transaction.
-- Enhancement: PSBT files on MicroSD can now be provided in base64 or hex encodings. Resulting
-  (signed) PSBT will be written in same encoding as the input PSBT.
-- Bugfix: crashed on entry into the Address Explorer (some users, sometimes).
-- Bugfix: add blank line between addresses shown if sending to multiple destinations.
-- Bugfix: multisig outputs were not checked to see if they are change (would have been
-  shown as regular outputs), if the PSBT did not have XPUB data in globals section.
+## Version 3.1.0 - Feb 20, 2020
+
+- HSM (Hardware Security Module) mode: give Coldcard spending rules, including whitelisted
+  addresses, velocity limits, subsets of authorizing users ... and Coldcard can sign with
+  no human present. Requires companion software to setup (ckbunker or ckcc-protocol),
+  and disabled by default, with multi-step on-screen confirmation required to enable. Mk3 only.
+- Enhancement: New "user management" menu. Advanced > User Management shows a menu
+  with usernames, some details and a 'delete user' command. USB commands must be used to
+  create user accounts and they are only used to authenticate txn approvals in HSM mode.
+- Enhancement: PSBT transaction can be "visualized" over USB, meaning you can view what
+  the Coldcard will show on the screen during approval process, as text, downloaded over USB.
+  That text can be signed (always with root key) to prove authenticity.
+- Enhancement: Sending large PSBT files, and firmware upgrades over USB should be a little faster.
+- **IMPORTANT**: This release is NOT COMPATIBLE with Mk1 hardware. It will brick Mk1 Coldcards.
 
 Older releases and their changes [are listed here](version-history),
 the full source code, hardware details, and much more can be found
 in [our repository on github](https://github.com/Coldcard/firmware/tree/master/releases).
+
+## Mark 1 Hardware (2018)
+
+The Mk1 hardware is obsolete and no further updates will be made. The final
+version of firmware for the Mk1 is 3.0.6
+[(file 2019-12-19T1623-v3.0.6)](https://github.com/Coldcard/firmware/raw/master/releases/2019-12-19T1623-v3.0.6-coldcard.dfu). Do not load any newer firmware version,
+as it will brick the device.
 
 ---
 
