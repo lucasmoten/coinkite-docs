@@ -148,6 +148,24 @@ unprotected USB commands can be launched.
 `boot_to_hsm` mode also addresses the same concern, since it assumes
 the answer is Yes to that boot-up question.
 
+
+## Untrusted Remote Hands
+
+When "boot to HSM" feature is enabled, and there are any per-period
+limits, we start off with the current period active, and all maximum
+amounts spent. In other words, after boot up, they will have to wait-out
+the velocity period before those rules can be used.
+
+This is needed because the "remote hands" may have access to the
+master PIN code, but not have full spending authority. Therefore,
+we cannot allow those hands to reset the spending period because
+they could circumvent the velocity limits that way.
+
+If the "boot to HSM" feature isn't enabled, we don't need to have
+this policy because anyone who can reboot the device has the master
+PIN, and could just as well disable the HSM entirely... so velocity
+limits don't apply to them.
+
 ## Side Channel Attacks
 
 Any HSM which can perform unattended signing operations is at risk
@@ -171,4 +189,5 @@ If there is enough interest, we will make a lockable metal box, with
 suitable EMI gasketing, and specialized power isolation circuit inside for
 the USB connection. Please contact <support@coinkite.com> if you'd
 like more information.
+
 
