@@ -1,19 +1,6 @@
 title: Upgrade Firmware
 
-<em><a href="#upgradehow" >Learn how to upgrade here ></a></em>
-
-## Upgrading Step-by-step Guide
-
-1. Download and verify the latest firmware release.
-2. Save the `20...-coldcard.dfu` firmware file onto a SD card.
-3. Plug the SD card into your ColdCard.
-4. Power up your ColdCard and unlock it with your PIN.
-5. Go to the `Advanced > Upgrade` menu and click on `From SD Card`. 
-6. After the confirmation dialog, ColdCard will upgrade and reboot (slow).
-7. Type in your PIN again. Verify new version running with:<br>
-   `Advanced > Upgrade > Show Version`
-8. If you powered down during this process, to get a green light again, you may need to use:<br>
-   `Advanced > Upgrade > Bless Firmware`
+<em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
 ## Current Version of Coldcard Firmware &mdash; Version 3.1.0
 
@@ -41,13 +28,26 @@ in [our repository on github](https://github.com/Coldcard/firmware/tree/master/r
 ## Mark 1 Hardware (2018)
 
 The Mk1 hardware is obsolete and no further updates will be made. The final
-version of firmware for the Mk1 is 3.0.6
-[(file 2019-12-19T1623-v3.0.6)](https://github.com/Coldcard/firmware/raw/master/releases/2019-12-19T1623-v3.0.6-coldcard.dfu). Do not load any newer firmware version,
+version of firmware for the Mk1 is
+[3.0.6 (2019-12-19T1623-v3.0.6)](https://github.com/Coldcard/firmware/raw/master/releases/2019-12-19T1623-v3.0.6-coldcard.dfu). Do not load any newer firmware version,
 as it will brick the device.
 
 ---
 
 # How To Upgrade { #upgradenow }
+
+## Upgrading Step By Step
+
+1. Download and verify the [latest firmware release](https://github.com/Coldcard/firmware/raw/master/releases).
+2. Save the `20...-coldcard.dfu` firmware file onto a SD card.
+4. Power up your ColdCard and unlock it with your PIN.
+5. Go to the `Advanced > Upgrade` menu and click on `From SD Card`. 
+6. After the confirmation dialog, ColdCard will upgrade and reboot (slow).
+7. Type in your PIN again. Verify new version running with:<br>
+   `Advanced > Upgrade > Show Version`
+8. If you powered down during this process, to get a green light again,
+   you may need to use: `Bless Firmware` in that menu.
+
 
 ## Advanced: Verify Your Downloads
 
