@@ -35,6 +35,7 @@ ordering: 100
 	- [Video: **Unbagging** the ColdCard Mark2 - Max Hillebrand](https://www.youtube.com/watch?v=5FwOOTYH7Uw) 
 	- [Video: How To Use Coldcard Wallet | Import-Backup Wallets + Settings - by KIS](https://www.youtube.com/watch?v=M3miU_xp-IY)
 	- [Videos em Portugues: Coldcard | Tutorial Completo - by Bitcoinheiros](https://www.youtube.com/watch?v=jutQyA0X_Sc&list=PLgcVYwONyxmgyS3fAPkLCyejKEDQJWRLd)
+	- [Video: How to show your Coldcard balance on iPhone - by BITVOLT7](https://www.youtube.com/watch?v=xWeQwOyEDhI&t=356s)
 
 - Reviews
 	- [Video: Ministry of Nodes Review - Coinkite Coldcard Mk2](https://www.youtube.com/watch?v=eXInjdY9AM8)
