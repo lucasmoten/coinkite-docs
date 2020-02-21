@@ -186,9 +186,9 @@ This feature forces the Coldcard to start in HSM mode immediately
 after boot up (and entry of the master PIN). It is enabled 
 if `boot_to_hsm` is defined.
 
-If your specify a 6-digit numeric code for `boot_to_hsm`, and if
-that code is provided in the first 30 seconds after startup, you
-can leave HSM mode. (The policy file is erased in this process.)
+If you specify a 6-digit numeric code for `boot_to_hsm`, and if
+that code is provided in the first 30 seconds after startup, the Coldcard
+will leave HSM mode. (The HSM policy file is erased in this process.)
 
 But if you set the `boot_to_hsm` value to a non-numeric value which
 cannot be entered by the keypad, the Coldcard will never be able
