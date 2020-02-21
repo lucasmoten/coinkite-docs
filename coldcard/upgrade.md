@@ -4,7 +4,7 @@ title: Upgrade Firmware
 
 ## Current Version of Coldcard Firmware &mdash; Version 3.1.0
 
-[2020-02-20T1448-v3.1.0-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-20T1448-v3.1.0-coldcard.dfu) released Feb 20, 2020.
+[2020-02-20T1448-v3.1.0-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-20T1448-v3.1.0-coldcard.dfu) released Feb 20, 2020. **IMPORTANT**: This release is NOT COMPATIBLE with Mk1 hardware. It will brick Mk1 Coldcards.
 
 ## Version 3.1.0 - Feb 20, 2020
 
