@@ -66,6 +66,13 @@ You can give your Coldcard a personalized name. Once set, it will
 show this name immediately on power-up. No PIN is needed. Just press
 any key to proceed to the normal login process.
 
+## Scramble Keypad
+
+If this is enabled, when entering PIN, the order of the key numbers
+are randomized, so that cameras and shoulder-surfers are defeated.
+
+![scrambled-pin](img/snap-scrambled.png){.snap}
+
 ## Blockchain
 
 From this menu, choose which blockchain to use. This does not affect
