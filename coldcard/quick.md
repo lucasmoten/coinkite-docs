@@ -172,7 +172,6 @@ Steps (for Electrum):
 - open the wallet file, and wait for sync to complete.
 - you may want to keep the wallet file (which now has many additional details
   about change addresses and so on) elsewhere on your computer.
-- your new wallet will use old-style (not segwit) payment addresses for maximum compatibility
 
 When you want to spend from this wallet:
 
@@ -196,9 +195,27 @@ We support creating 'skeleton' wallet files for these systems:
 - [Electrum](https://electrum.org)
 - [Wasabi](https://wasabiwallet.io)
 
+### Multiple Accounts
+
+_(new in v3.1.1)_
+
+When exporting files for Bitcoin Core or Electrum, you may now press "1" at the
+confirmation screen, and then enter an arbitrary "account number" on the Coldcard.
+That account number is put as the last hardened component of the derivation path for
+the wallet's keys. 
+
+![account number entry](img/snap-acct-number.png){.snap .indented}
+
+In this example, if a segwit-style wallet was made, the full derivation
+path of the first address (non-change) would be:
+
+    m/84'/1'/615'/0/0
+
+Note the `615'` in the the path. By default, account number is zero.
+
 # What's Next
 
-Keep your Coldcard in a safe location. Everytime you remove it from storage and use it,
+Keep your Coldcard in a safe location. Every time you remove it from storage and use it,
 please consider the following:
 
 - Are there scratches on the case?
