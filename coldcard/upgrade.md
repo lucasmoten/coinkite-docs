@@ -2,9 +2,24 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.0
+## Current Version of Coldcard Firmware &mdash; Version 3.1.1
 
-[2020-02-20T1448-v3.1.0-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-20T1448-v3.1.0-coldcard.dfu) released Feb 20, 2020. **IMPORTANT**: This release is NOT COMPATIBLE with Mk1 hardware. It will brick Mk1 Coldcards.
+[2020-02-26T1316-v3.1.1-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-26T1316-v3.1.1-coldcard.dfu) released Feb 26, 2020.
+
+_**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
+
+## Version 3.1.1 - Feb 26, 2020
+
+- Enhancement: New setting to enable a scrambled numeric keypad during PIN login.
+- Enhancement: Press 4 when viewing a payment address (triggered by USB command) to
+  see the QR code on-screen (Mk3 only).
+- Enhancement: Can enter non-zero account numbers when exporting wallet files for Electrum
+  and Bitcoin Core. This makes importing seeds from other systems easier and safer.
+- Enhancement: Dims the display when entering HSM Mode.
+- Bugfix: Trust PSBT setting (for multisig wallets) was being ignored. Thanks to @CasaHODL
+  for reporting this.
+- Bugfix: XPUB values volunteered in the global section of a PSBT for single-signer files would
+  cause errors (but ok in multisig). Coldcard will now handle this, although it doesn't need them.
 
 ## Version 3.1.0 - Feb 20, 2020
 
@@ -25,7 +40,7 @@ Older releases and their changes [are listed here](version-history),
 the full source code, hardware details, and much more can be found
 in [our repository on github](https://github.com/Coldcard/firmware/tree/master/releases).
 
-## Mark 1 Hardware (2018)
+## Mark 1 Hardware (late 2017 / early 2018)
 
 The Mk1 hardware is obsolete and no further updates will be made. The final
 version of firmware for the Mk1 is
