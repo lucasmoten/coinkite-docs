@@ -2,13 +2,13 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.1
+## Current Version of Coldcard Firmware &mdash; Version 3.1.2
 
-[2020-02-26T1316-v3.1.1-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-26T1316-v3.1.1-coldcard.dfu) released Feb 26, 2020.
+[2020-02-27T1355-v3.1.2-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-27T1355-v3.1.2-coldcard.dfu) released Feb 27, 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
 
-## Version 3.1.1 - Feb 26, 2020
+## Version 3.1.2 - Feb 27, 2020
 
 - Enhancement: New setting to enable a scrambled numeric keypad during PIN login.
 - Enhancement: Press 4 when viewing a payment address (triggered by USB command) to
@@ -20,6 +20,7 @@ _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They w
   for reporting this.
 - Bugfix: XPUB values volunteered in the global section of a PSBT for single-signer files would
   cause errors (but ok in multisig). Coldcard will now handle this, although it doesn't need them.
+- Bugfix: 3.1.1 had a bug which broke the new "non-zero account export" feature.
 
 ## Version 3.1.0 - Feb 20, 2020
 
