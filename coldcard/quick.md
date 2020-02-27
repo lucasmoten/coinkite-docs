@@ -209,7 +209,7 @@ the wallet's keys.
 In this example, if a segwit-style wallet was made, the full derivation
 path of the first address (non-change) would be:
 
-    m/84'/1'/615'/0/0
+    m/84'/0'/615'/0/0
 
 Note the `615'` in the the path. By default, account number is zero.
 
