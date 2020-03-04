@@ -66,6 +66,13 @@ You can give your Coldcard a personalized name. Once set, it will
 show this name immediately on power-up. No PIN is needed. Just press
 any key to proceed to the normal login process.
 
+## Scramble Keypad
+
+If this is enabled, when entering PIN, the order of the key numbers
+are randomized, so that cameras and shoulder-surfers are defeated.
+
+![scrambled-pin](img/snap-scrambled.png){.snap}
+
 ## Blockchain
 
 From this menu, choose which blockchain to use. This does not affect
@@ -76,27 +83,15 @@ payment addresses. Only developers and other users of TestNet will need this.
 
 ![pin-menu](img/snap-pin-menu.png){.snap}
 
-## Different Kinds of PIN Codes
-
-There are two "wallets" in each Coldcard, however, the primary PIN
-should be considered the "owner" of the Coldcard. For some
-security-related functions, such as firmware updates, you will need
-the primary PIN.
-
-Use the Secondary PIN to store another independent seed to segregate
-your funds. To login with the secondary pin, after entering the 
-PIN prefix, while looking at the anti-phishing words, press 2 instead
-of OK. 
 
 ### Duress Wallets
 
-Both the main and secondary wallets have a derived "duress" wallet.
 The duress wallet is intended as a personal safety feature: you
 should put money you are willing to lose into the duress wallet,
 and should you even be forced to reveal a PIN, you may provide the
 duress PIN in place of the "real" PIN. The Coldcard operates as
 normal when unlocked by the duress PIN code so that your attackers
-are not alerted.  However, if they are technical enough, there are
+are not alerted. However, if they are technical enough, there are
 ways to detect the difference.
 
 [Start here](https://github.com/Coldcard/firmware/blob/master/docs/pin-entry.md#recovery-of-funds-from-duress-wallet) to learn more about the technical details.
@@ -105,18 +100,11 @@ ways to detect the difference.
 
 There is also a PIN number which we call the "brickme PIN". If that
 PIN code is used at any prompt, the Coldcard destroys itself. It
-becomes a useless brick. All the secrets (including the secondary wallet)
-are destroyed.
+becomes a useless brick. All the secrets are destroyed.
 
 Please be careful with the brickme PIN. The destruction process is
 quick and irreversible. The Coldcard should be discarded as e-waste
 and cannot be reused.
-
-## Choose Diverse PIN Codes
-
-Please use unique PIN codes for each feature. In theory the duress
-PINs (main and secondary) could be the save value, and the main and
-secondary PIN's could also match each other, but that is not recommended.
 
 ## Forgotten PIN Code
 
@@ -144,4 +132,12 @@ little slower to respond to your touch.
 
 _(new in v1.1.0, removed on Mk2 hardware)_
 
+## Secondary Wallets (Mk1, Mk2 only)
+
+In earlier makes of the Coldcard, there was a concept of a "secondary"
+wallet, that had most of the features of the main wallet, but an
+independany PIN code and seed phrase. Due to hardware limitations
+and security-related changes, this was removed in the Mk3 Coldcard.
+
+_(removed after Mk2)_
 

@@ -93,6 +93,8 @@ easy to read.
 
 ## Primary vs. Secondary
 
+_(Applies to Mk1 and Mk2 only)_
+
 The current wallet, along with data for the corresponding duress
 wallet is recorded during the backup. Details of the other wallet
 (secondary when using the primary, for example) are not saved. You
