@@ -152,13 +152,15 @@ sequence, you will verify the bag number matches the factory bag number.
 
 ## This random MicroSD card doesn't work?
 
-There are so many MicroSD cards out there, it's not possible for
-us to test with them all. We have tested with all the cards we can
-find locally, and a few ultra-cheap ones from Aliexpress. Still there
-will be some that won't work. If it's formatted as FAT32 and works
-on your computer, it should work. Please try another brand of 
-card and if that fails, try one of our
-[SLC cards, available in our store.](https://store.coinkite.com/store/microsd-cc)
+There are so many MicroSD cards out there, it's not possible for us
+to test with them all. We have tested with all the cards we can find
+locally, and a few ultra-cheap ones from Aliexpress. Still there will be
+some that won't work. [If it's formatted as FAT32 and equal or smaller
+than 32GB](https://coldcardwallet.com/docs/hardware), it should work.
+
+Please try another brand of card and if that fails, try
+one of our [high quality true SLC cards, available in our
+store.](https://store.coinkite.com/store/microsd-cc)
 
 
 ## Do you support Segwit (Segregated Witness) on the Coldcard?
