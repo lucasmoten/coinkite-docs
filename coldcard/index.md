@@ -26,6 +26,9 @@ ordering: 100
 - BTCPay Server
 	- [Video: Connecting Coldcard wallet to BTCPay Server](https://www.youtube.com/watch?v=N0eVwdP_7EQ)
 	- [Video: Coldcard wallet and BTCPay Server - PSBT Sending from a wallet airgapped](https://www.youtube.com/watch?v=oK0h-76Giaw)
+	
+- Bluewallet
+	- [Video: How to use Coldcard with Bluewallet](https://www.youtube.com/watch?v=hF2MyDB0nno)
 
 - Misc
 	- [Video: Setting up ColdCard Mark2 **Wallet Backup** - Max Hillebrand](https://www.youtube.com/watch?v=w6MvnUu2GBo)
