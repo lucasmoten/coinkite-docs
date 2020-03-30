@@ -149,9 +149,10 @@ You can grab a copy of all the values the clock is tracking. This will include `
   "temperature.degrees_f": 73.79375,
   "temperature.fahrenheit": "73\u00b0F",
   "text.blank": "        ",
-  "bitcoinaverage.ADAUSD.averages.day": 0.04417523,
-  "bitcoinaverage.ADAUSD.timestamp": "2019-01-18T18:50:03+00:00",
-  "bitcoinaverage.ADAUSD.bid": 0.043645077515610524
+  "halvening.next": 630000,
+  "halvening.prev": 420000,
+  "halvening.until": 6360,
+  "halvening.expected": "2020-05-13T22:13:42+00:00",
 ...
 ```
 

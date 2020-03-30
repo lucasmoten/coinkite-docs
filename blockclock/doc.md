@@ -121,7 +121,7 @@ be controlled as well.
 
 There are five values you may configure for each line of the display: 
 
-- Data Source, for example: `bitcoinaverage.BTCUSD.last`
+- Data Source, for example: `bitstamp.btcusd.last`
 - Overlay Text: `USD`
 - Display Expression: `int(x)`
 - Red Dot: `x < 3500`
@@ -153,9 +153,6 @@ As of this writing, the following data sources are available:
 binance
 : Data from [Binance](https://Binance.com) on 400+ exchange pairs
 
-bitcoinaverage
-: [Bitcoin Average](https://Bitcoinaverage.com) of exchange-neutral pricing
-
 bitstamp
 : Prices from [Bitstamp](https://Bitstamp.net)
 
@@ -184,6 +181,12 @@ temperature
 
 datetime
 : Date and time values in configurable timezones
+
+holidays
+: Important dates and times for the Bitcoin world.
+
+halvening
+: Expected time of the next halving of the coinbase reward.
 
 network
 : Assigned IP addresses
