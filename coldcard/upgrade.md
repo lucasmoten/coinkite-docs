@@ -71,13 +71,14 @@ The release binaries may be verified using
 [this clear-signed text file](https://raw.githubusercontent.com/Coldcard/firmware/master/releases/signatures.txt)
 and GPG. The commands are:
 
-    curl https://pgp.key-server.io/download/0xA3A31BAD5A2A5B10 | gpg --import
+    curl https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xA3A31BAD5A2A5B10 | gpg --import
     gpg --verify signatures.txt
 
-Please look for signing key: `[4589779ADFC14F3327534EA8A3A31BAD5A2A5B10](https://pgp.key-server.io/pks/lookup?op=get&search=0xA3A31BAD5A2A5B10)`
+The first command imports the public key [`4589779ADFC14F3327534EA8A3A31BAD5A2A5B10`](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xA3A31BAD5A2A5B10) and the second verifies the file's
+signature vs. file contents.
 
 Don't forget to run SHA256 over the DFU files themselves, because that compares
-your actual file contents to what we signed.
+the actual file contents to what we have signed.
 
     sha256sum 2019-12-19T1623-v3.0.6-coldcard.dfu
 
