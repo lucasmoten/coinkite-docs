@@ -2,11 +2,30 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.2
+## Current Version of Coldcard Firmware &mdash; Version 3.1.3
 
-[2020-02-27T1355-v3.1.2-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-02-27T1355-v3.1.2-coldcard.dfu) released Feb 27, 2020.
+[2020-04-30T1612-v3.1.3-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-04-30T1612-v3.1.3-coldcard.dfu) released Apr 30, 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
+
+## Version 3.1.3 - April 30, 2020
+
+- Enhancement: Save your BIP39 passphrases, encrypted, onto a specific SDCard, if desired.
+  Passphrases are encrypted with AES-256 (CTR mode) using a key derived from the master
+  secret and hash of the serial number of the SDCard. You cannot copy the file to
+  another card. To use this feature, press (1) after you've successfully entered your
+  passphrase. 'Restore Saved' menu item will appear at top of passphrase-entry menu,
+  when correctly-encrypted file is detected.
+- Enhancement: Export a generic JSON skeleton file, not aligned with any particular
+  desktop/mobile wallet, but useful for any such integrations. Includes XPUB (and
+  associated data) needed for P2PKH, P2WPKH (segwit) and P2WPKH-P2SH wallets, which
+  conform to BIP44, BIP84, and BIP49 respectively.
+  Thanks to [@craigraw](https://twitter.com/craigraw) the idea.
+- Enhancement: when signing a text file from MicroSD card, if you specify a derivation
+  path that starts with `m/84'/...` indicating that you are following BIP84 for
+  segwit addresses, the resulting signature will be formatted as P2WPKH in Bech32.
+- Minor code cleanups and optimizations.
+
 
 ## Version 3.1.2 - Feb 27, 2020
 
