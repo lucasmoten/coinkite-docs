@@ -90,6 +90,23 @@ you use secure logout or turn off the Coldcard.
 
 Press X to go back and adjust your passphrase if the fingerprint is not what you expected.
 
+[_(new in 3.1.3)_](upgrade)
+
+Press (1) to save your new passphrase onto a MicroSD card at this point. Your
+passphrase value
+will be encrypted and preserved on the card for next time. To make use of the passphrase,
+just have the same MicroSD card inserted when you go into the _Passphrase_ menu. There will
+be a new menu item at the top, _Restore Saved_ and if you pick that, a menu is shown with
+your saved values:
+
+![example restore](img/snap-restore-pw.gif){.snap}
+
+For security reasons, only a few letters will be shown; just enough to differentiate
+between your passphrases, if you know them already. Pick the one you want, and press OK.
+There are no more steps; the new value is in effect.
+
+
+
 ### Using Coldcard with a BIP39 Passphrase
 
 - All features operate the same as normal after the passphrase is used.
@@ -127,6 +144,11 @@ Press X to go back and adjust your passphrase if the fingerprint is not what you
 
 - Passphrases may be used an alternative to the "duress PIN" feature, and it is more
   powerful because there are an unlimited number of possible wallets.
+
+- Saved passphrase values can be found in the file `/.tmp.tmp` on the MicroSD card, if
+  you have chosen to save them. They are encrypted with AES-256 (CTR mode) with a key
+  derived from the master secret (seed words) and a hash of the MicroSD's unique
+  serial number. For this reason, you cannot copy the encrypted file to another card.
 
 
 ## Related Feature: Lock Down Seed
