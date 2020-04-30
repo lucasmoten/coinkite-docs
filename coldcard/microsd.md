@@ -145,4 +145,14 @@ H9JPn0tbPfDVRVC48YnAOwbYKTCFQ5hvimrBAPyRtuzjPxM+hbDCGk+CvtTt/BJrJZkgJi9/UAKyrnby
 -----END BITCOIN SIGNED MESSAGE-----
 ```
 
+### Segwit-Style Address
+
+_(new in v3.1.3)_
+
+If you specify a path that conforms
+to [BIP 84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki),
+we will assume you want
+the address to be shown in Segwit/Bech32 P2PKH format, rather than
+classic Bitcoin base58 format. Any path that starts with `m/84'/` will
+get this treatment. The signature value itself, is not impacted by this change.
 
