@@ -194,6 +194,7 @@ We support creating 'skeleton' wallet files for these systems:
 - [Bitcoin Core](https://bitcoin.org/en/download)
 - [Electrum](https://electrum.org)
 - [Wasabi](https://wasabiwallet.io)
+- [Generic JSON](https://github.com/Coldcard/firmware/blob/master/docs/generic-wallet-export.md)
 
 ### Multiple Accounts
 
