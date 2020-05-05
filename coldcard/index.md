@@ -91,3 +91,7 @@ ordering: 100
 - How [developers can modify Coldcard]({{DOCS}}/dev-access.md) to extend it.
 - [Memory map]({{DOCS}}/memory-map.md)  highlights.
 
+# Mechanical Design
+
+- 88 x 51 x 9 mm
+- [Unofficial Volumetric 3D model [STP]](https://github.com/TiKawamoto/3d-printing/tree/master/Coldcard) by [@TiKawamoto](https://twitter.com/TiKawamoto/status/1257489848388239362)
