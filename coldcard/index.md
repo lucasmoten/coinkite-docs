@@ -5,6 +5,7 @@ ordering: 1000
 # Quick Start
 
 - [Official getting started with your new Coldcard guide](quick)
+- [Coldcard Video Tutorials <mark>NEW</mark> (more added all the time, make sure to subscribe)](https://www.youtube.com/playlist?list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W)
 
 ### Guides by Others
 
