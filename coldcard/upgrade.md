@@ -2,11 +2,33 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.3
+## Current Version of Coldcard Firmware &mdash; Version 3.1.4
 
-[2020-04-30T1612-v3.1.3-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-04-30T1612-v3.1.3-coldcard.dfu) released Apr 30, 2020.
+[2020-06-12T1936-v3.1.4-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-06-12T1936-v3.1.4-coldcard.dfu) released June 12, 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
+
+## Version 3.1.4 - June 12, 2020
+
+- Enhancement: Detect, report and block the recently reported type of attack
+  against BIP-143 (replay of segwit inputs) with an error message. No changes
+  needed to your input PBST files. Will show errors similar to:
+  "Input#0: Expected 15 but PSBT claims 5.00001 BTC"
+- Enhancement: When the Coldcard is finalizing the transaction, we show the TXID (hex
+  transaction ID) of the transaction on the screen. 
+- Enhancement: Export deterministically-derived entropy in the form of
+  seed phrases (BIP39), XPRV, private key (WIF), or hex digits using new BIP-85 standard.
+  Useful for seeding other wallets from your Coldcard, so you don't need to backup
+  "yet another" seed phrase. Derived values (all types) can be easly recreated from
+  Coldcard later, or the backup of the Coldcard. Does not expose the Coldcard's master
+  secret, should new wallet be compromised.
+- Bugfix: When scrambled keypad used with the login delay feature, the PIN-entry sequence
+  was not scrambled after the forced delay was complete. Thanks to an anon customer
+  for reporting this.
+- Bugfix: Scrambled keypad didn't change between PIN prefix and suffix.
+- Enhancement: QR Code rendering improved. Should be more readable in more cases. Faster.
+- Enhancement: View percent consumed of the settings flash space (just for debug)
+- Enhancement: New command to clear the UTXO history, in rare case of false positive.
 
 ## Version 3.1.3 - April 30, 2020
 
@@ -26,35 +48,6 @@ _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They w
   segwit addresses, the resulting signature will be formatted as P2WPKH in Bech32.
 - Minor code cleanups and optimizations.
 
-
-## Version 3.1.2 - Feb 27, 2020
-
-- Enhancement: New setting to enable a scrambled numeric keypad during PIN login.
-- Enhancement: Press 4 when viewing a payment address (triggered by USB command) to
-  see the QR code on-screen (Mk3 only).
-- Enhancement: Can enter non-zero account numbers when exporting wallet files for Electrum
-  and Bitcoin Core. This makes importing seeds from other systems easier and safer.
-- Enhancement: Dims the display when entering HSM Mode.
-- Bugfix: Trust PSBT setting (for multisig wallets) was being ignored. Thanks to @CasaHODL
-  for reporting this.
-- Bugfix: XPUB values volunteered in the global section of a PSBT for single-signer files would
-  cause errors (but ok in multisig). Coldcard will now handle this, although it doesn't need them.
-- Bugfix: 3.1.1 had a bug which broke the new "non-zero account export" feature.
-
-## Version 3.1.0 - Feb 20, 2020
-
-- HSM (Hardware Security Module) mode: give Coldcard spending rules, including whitelisted
-  addresses, velocity limits, subsets of authorizing users ... and Coldcard can sign with
-  no human present. Requires companion software to setup (ckbunker or ckcc-protocol),
-  and disabled by default, with multi-step on-screen confirmation required to enable. Mk3 only.
-- Enhancement: New "user management" menu. Advanced > User Management shows a menu
-  with usernames, some details and a 'delete user' command. USB commands must be used to
-  create user accounts and they are only used to authenticate txn approvals in HSM mode.
-- Enhancement: PSBT transaction can be "visualized" over USB, meaning you can view what
-  the Coldcard will show on the screen during approval process, as text, downloaded over USB.
-  That text can be signed (always with root key) to prove authenticity.
-- Enhancement: Sending large PSBT files, and firmware upgrades over USB should be a little faster.
-- **IMPORTANT**: This release is NOT COMPATIBLE with Mk1 hardware. It will brick Mk1 Coldcards.
 
 Older releases and their changes [are listed here](version-history),
 the full source code, hardware details, and much more can be found
