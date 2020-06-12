@@ -1,5 +1,5 @@
 title: Trouble Shooting
-ordering: 99
+ordering: 999
 
 ### My valid PSBT file produces warning "Troublesome Change Outs"
 
@@ -64,6 +64,7 @@ This can happen normally during the upgrade process and isn't a cause for
 concern, as long as you are one doing the upgrade and have maintained
 physical possession of the device during the process. You
 can reset the light to green [by 'blessing' the firmware](upgrade#bless-firmware).
+
 
 ## See also the FAQ
 

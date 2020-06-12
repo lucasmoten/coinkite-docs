@@ -1,6 +1,6 @@
 menu-title: Table of Contents
 title: Coldcard User Documentation
-ordering: 100
+ordering: 1000
 
 # Quick Start
 
