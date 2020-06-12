@@ -17,6 +17,8 @@ auto-logout function completely.
 
 ## Login Countdown
 
+{{ vidlink("Setup COLDCARD Login Countdown", "https://www.youtube.com/watch?v=hhnC2l1g7eA&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=2") }}
+
 As a defensive measure, the "login countdown" can force
 a time delay when logging into the Coldcard.
 Once enabled, you must enter you PIN correctly, and then wait out
@@ -61,6 +63,8 @@ This sub-menu allows you to manage the [multisig wallets](multisig)
 known to the Coldcard.
 
 ## Set Nickname
+
+{{ vidlink("Set a COLDCARD Nickname", "https://www.youtube.com/watch?v=UOjsbezUSxY&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=2&t=0s") }}
 
 You can give your Coldcard a personalized name. Once set, it will
 show this name immediately on power-up. No PIN is needed. Just press

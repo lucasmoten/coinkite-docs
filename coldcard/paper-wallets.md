@@ -1,6 +1,10 @@
 title: Paper Wallets
 ordering: 100
 
+[_(new in v3.0.5)_](upgrade)
+
+{{ vidlink("How to make a Bitcoin Paper Wallet", "https://www.youtube.com/watch?v=ERQfuzE3GOg&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=4") }}
+
 This feature creates a new random private key, completely unrelated
 to your seed words, and saves deposit address and private key (WIF
 format) into a text file on MicroSD. That file is a ready to use

@@ -40,6 +40,8 @@ Import XPRV
 you to create the private key directly. In that way it's not really
 an 'key import', but a 'create key'._</span>
 
+{{ vidlink("COLDCARD Dice Rolls seed entropy", "https://www.youtube.com/watch?v=Rc29d9m92xg&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=5") }}
+
 Dice Rolls
 : You have the option of creating a unique seed value by rolling a
   six-sided dice (D6). Just keep pressing 1&ndash;6 as you roll. At least

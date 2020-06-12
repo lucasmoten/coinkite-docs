@@ -73,6 +73,9 @@ as it will brick the device.
 
 ## Upgrading Step By Step
 
+
+{{ vidlink("How to Verify COLDCARD's Firmware", "https://www.youtube.com/watch?v=RYcB5HpfcaE&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=3") }}
+
 1. Download and verify the [latest firmware release](https://github.com/Coldcard/firmware/raw/master/releases).
 2. Save the `20...-coldcard.dfu` firmware file onto a SD card.
 4. Power up your ColdCard and unlock it with your PIN.

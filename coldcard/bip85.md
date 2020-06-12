@@ -1,6 +1,7 @@
 title: Export Deterministic Entropy (BIP-85)
 ordering: 101
 
+[_(new in v3.1.4)_](upgrade)
 
 COLDCARD can export "entropy" based mathematically on your COLDCARD's
 seed value. This will be displayed as a 12 or 24 word seed phrase,
