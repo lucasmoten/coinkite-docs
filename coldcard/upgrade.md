@@ -2,15 +2,15 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.5
+## Current Version of Coldcard Firmware &mdash; Version 3.1.6
 
-[2020-06-13T1928-v3.1.5-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-06-13T1928-v3.1.5-coldcard.dfu) released June 13, 2020.
+[2020-06-14T1626-v3.1.6-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-06-14T1626-v3.1.6-coldcard.dfu) released June 14, 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
 
 {{ vidlink("How to Upgrade Firmware", "https://www.youtube.com/watch?v=RYcB5HpfcaE&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=3") }}
 
-## Version 3.1.5 - June 13, 2020
+## Version 3.1.6 - June 14, 2020
 
 - Enhancement: Detect, report and block the recently reported type of attack
   against BIP-143 (replay of segwit inputs) with an error message. No changes
@@ -31,8 +31,8 @@ _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They w
 - Enhancement: QR Code rendering improved. Should be more readable in more cases. Faster.
 - Enhancement: View percent consumed of the settings flash space (just for debug)
 - Enhancement: New command to clear the UTXO history, in rare case of false positive.
-- (v3.1.5) Bugfix: Signing PSBT with finalization from MicroSD card, did not work. Error about
-  "HexWriter" was shown.
+- (v3.1.6) Bugfix: Signing PSBT with finalization from MicroSD card, did not work. Error about
+  "HexWriter" was shown, or "Assertion" error in 3.1.5.
 
 ## Version 3.1.3 - April 30, 2020
 
