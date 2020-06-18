@@ -6,23 +6,24 @@ ordering: 100
 
 - [Official getting started with your new Coldcard guide](quick)
 - [Coldcard Video Tutorials <mark>NEW</mark> (more added all the time, make sure to subscribe)](https://www.youtube.com/playlist?list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W)
+- [How to upgrade the firmware](upgrade)
 
 ### Guides by Others
 
 - Electrum
-	- [Video: How to use ColdCard with **Electrum** - Max Hillebrand](https://www.youtube.com/watch?v=9A0cS2wwMI0)
-	- [How to make offline transactions in **Electrum** with Coldcard wallet. - Arkad](https://medium.com/@Multicripto/how-to-make-offline-transactions-in-electrum-with-coldcard-wallet-838f84df379a) | [Spanish](https://medium.com/@Multicripto/c%C3%B3mo-hacer-transacciones-offline-con-coldcard-wallet-a-trav%C3%A9s-de-electrum-b2eeb847e4b2)
-	- [Video: How To Use Coldcard Wallet | Setup + Electrum Wallet - by KIS](https://www.youtube.com/watch?v=_6mgLnTxPUs)
+	- [Video: How to use ColdCard with **Electrum**](https://www.youtube.com/watch?v=9A0cS2wwMI0)
+	- [How to make offline transactions in **Electrum** with Coldcard wallet.](https://medium.com/@Multicripto/how-to-make-offline-transactions-in-electrum-with-coldcard-wallet-838f84df379a) | [Spanish](https://medium.com/@Multicripto/c%C3%B3mo-hacer-transacciones-offline-con-coldcard-wallet-a-trav%C3%A9s-de-electrum-b2eeb847e4b2)
+	- [Video: How To Use Coldcard Wallet | Setup + Electrum Wallet](https://www.youtube.com/watch?v=_6mgLnTxPUs)
 
 
 - Wasabi
-    - [Video: Using Coldcard with **Wasabi Wallet** - BTC Sessions](https://www.youtube.com/watch?v=kocEpndQcsg)
-	- [Video: TFTC Guides: Coldcard + **Wasabi** Wallet Basic Setup and Usage - Matt Odell](https://www.youtube.com/watch?v=sM2uhyROpAQ)
+    - [Video: Using Coldcard with **Wasabi Wallet**](https://www.youtube.com/watch?v=kocEpndQcsg)
+	- [Video: TFTC Guides: Coldcard + **Wasabi** Wallet Basic Setup and Usage](https://www.youtube.com/watch?v=sM2uhyROpAQ)
 
 
 - CLI & ckcc-protocol
-	- [Video: Coldcard wallet - 402 Payment Required](https://www.youtube.com/watch?v=f8dBNrlwJ0k)
-	- [Video: **Passphrase over ckcc-protocol** - 402 Payment Required](https://www.youtube.com/watch?v=zP1VV0AB5Os)
+	- [Video: Coldcard wallet](https://www.youtube.com/watch?v=f8dBNrlwJ0k)
+	- [Video: **Passphrase over ckcc-protocol**](https://www.youtube.com/watch?v=zP1VV0AB5Os)
 
 - BTCPay Server
 	- [Video: Connecting Coldcard wallet to BTCPay Server](https://www.youtube.com/watch?v=N0eVwdP_7EQ)
@@ -32,14 +33,15 @@ ordering: 100
 	- [Video: How to use Coldcard with Bluewallet](https://www.youtube.com/watch?v=hF2MyDB0nno)
 
 - Misc
-	- [Video: Setting up ColdCard Mark2 **Wallet Backup** - Max Hillebrand](https://www.youtube.com/watch?v=w6MvnUu2GBo)
-	- [Video: Coldcard **PIN Design and Operation** - Max Hillebrand](https://www.youtube.com/watch?v=iuiOqqZ8eeU) 
-	- [Video: How to set up the **different PINs** of Cold Card Wallet - Max Hillebrand](https://www.youtube.com/watch?v=hk1Lq2Rp2KM) 
-	- [Video: Secure **Upgrade Firmware** of ColdCard Mark 2 - Max Hillebrand](https://www.youtube.com/watch?v=JCZzugnfQPs) 
-	- [Video: **Unbagging** the ColdCard Mark2 - Max Hillebrand](https://www.youtube.com/watch?v=5FwOOTYH7Uw) 
-	- [Video: How To Use Coldcard Wallet | Import-Backup Wallets + Settings - by KIS](https://www.youtube.com/watch?v=M3miU_xp-IY)
-	- [Videos em Portugues: Coldcard | Tutorial Completo - by Bitcoinheiros](https://www.youtube.com/watch?v=jutQyA0X_Sc&list=PLgcVYwONyxmgyS3fAPkLCyejKEDQJWRLd)
-	- [Video: How to show your Coldcard balance on iPhone - by BITVOLT7](https://www.youtube.com/watch?v=xWeQwOyEDhI&t=356s)
+	- [How to use an SD card of more than 32GB with Coldcard](https://hive.blog/coldcard/@transisto/how-to-use-an-sd-card-of-more-than-32gb-with-coldcard)
+	- [Video: Setting up ColdCard Mark2 **Wallet Backup**](https://www.youtube.com/watch?v=w6MvnUu2GBo)
+	- [Video: Coldcard **PIN Design and Operation**](https://www.youtube.com/watch?v=iuiOqqZ8eeU) 
+	- [Video: How to set up the **different PINs** of Cold Card Wallet](https://www.youtube.com/watch?v=hk1Lq2Rp2KM) 
+	- [Video: Secure **Upgrade Firmware** of ColdCard Mark 2](https://www.youtube.com/watch?v=JCZzugnfQPs) 
+	- [Video: **Unbagging** the ColdCard Mark2](https://www.youtube.com/watch?v=5FwOOTYH7Uw) 
+	- [Video: How To Use Coldcard Wallet | Import-Backup Wallets + Settings](https://www.youtube.com/watch?v=M3miU_xp-IY)
+	- [Videos em Portugues: Coldcard | Tutorial Completo](https://www.youtube.com/watch?v=jutQyA0X_Sc&list=PLgcVYwONyxmgyS3fAPkLCyejKEDQJWRLd)
+	- [Video: How to show your Coldcard balance on iPhone](https://www.youtube.com/watch?v=xWeQwOyEDhI&t=356s)
 
 - Reviews
 	- [Video: Ministry of Nodes Review - Coinkite Coldcard Mk2](https://www.youtube.com/watch?v=eXInjdY9AM8)
@@ -59,7 +61,6 @@ ordering: 100
 - [Advanced Menu](advanced) commands.
 
 - [Multisig](multisig) features.
-
 
 - How [Encrypted Backups](backups) work on the Coldcard.
 
