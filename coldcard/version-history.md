@@ -5,6 +5,35 @@ ordering: 95
 
 ## Obsolete Versions
 
+## Version 3.1.2 - Feb 27, 2020
+
+- Enhancement: New setting to enable a scrambled numeric keypad during PIN login.
+- Enhancement: Press 4 when viewing a payment address (triggered by USB command) to
+  see the QR code on-screen (Mk3 only).
+- Enhancement: Can enter non-zero account numbers when exporting wallet files for Electrum
+  and Bitcoin Core. This makes importing seeds from other systems easier and safer.
+- Enhancement: Dims the display when entering HSM Mode.
+- Bugfix: Trust PSBT setting (for multisig wallets) was being ignored. Thanks to @CasaHODL
+  for reporting this.
+- Bugfix: XPUB values volunteered in the global section of a PSBT for single-signer files would
+  cause errors (but ok in multisig). Coldcard will now handle this, although it doesn't need them.
+- Bugfix: 3.1.1 had a bug which broke the new "non-zero account export" feature.
+
+## Version 3.1.0 - Feb 20, 2020
+
+- HSM (Hardware Security Module) mode: give Coldcard spending rules, including whitelisted
+  addresses, velocity limits, subsets of authorizing users ... and Coldcard can sign with
+  no human present. Requires companion software to setup (ckbunker or ckcc-protocol),
+  and disabled by default, with multi-step on-screen confirmation required to enable. Mk3 only.
+- Enhancement: New "user management" menu. Advanced > User Management shows a menu
+  with usernames, some details and a 'delete user' command. USB commands must be used to
+  create user accounts and they are only used to authenticate txn approvals in HSM mode.
+- Enhancement: PSBT transaction can be "visualized" over USB, meaning you can view what
+  the Coldcard will show on the screen during approval process, as text, downloaded over USB.
+  That text can be signed (always with root key) to prove authenticity.
+- Enhancement: Sending large PSBT files, and firmware upgrades over USB should be a little faster.
+- **IMPORTANT**: This release is NOT COMPATIBLE with Mk1 hardware. It will brick Mk1 Coldcards.
+
 ## Version 3.1.0 - Feb 20, 2020
 
 - HSM (Hardware Security Module) mode: give Coldcard spending rules, including whitelisted
