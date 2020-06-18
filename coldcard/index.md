@@ -93,7 +93,9 @@ ordering: 1000
 - How [developers can modify Coldcard]({{DOCS}}/dev-access.md) to extend it.
 - [Memory map]({{DOCS}}/memory-map.md)  highlights.
 
-# Mechanical Design
+# **Mk3** Specifications
 
-- 88 x 51 x 9 mm
+- Size: 88 x 51 x 9 mm
+- Weight: approximate 30 grams
+- Power: 20 to 40mA
 - [Unofficial Volumetric 3D model [STP]](https://github.com/TiKawamoto/3d-printing/tree/master/Coldcard) by [@TiKawamoto](https://twitter.com/TiKawamoto/status/1257489848388239362)
