@@ -17,6 +17,7 @@ ordering: 1000
 
 
 - Wasabi
+	- [End to End Coldcard setup by Bitcoin Citadel](https://mattodell.keybase.pub/BitcoinCitadel_%20Coldcard_Wasabi%20Reference%20Guide.pdf)
     - [Video: Using Coldcard with **Wasabi Wallet**](https://www.youtube.com/watch?v=kocEpndQcsg)
 	- [Video: TFTC Guides: Coldcard + **Wasabi** Wallet Basic Setup and Usage](https://www.youtube.com/watch?v=sM2uhyROpAQ)
 
