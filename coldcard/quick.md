@@ -22,7 +22,15 @@ This is merely one of many layers of our security, and we know that
 plastic bags can be "hacked" with sharp knives and so on. This is an
 example of "Defense in Depth".
 
+### V1 Tamper Evident Bag:
+
 ![Example of bagged unit](img/coldcard-bagged.png){.limit-size}
+
+### V2 Tamper Evident Bag:
+
+A serialized tear off tab of the bag is included inside. You should use this tab to double check the width of the bag. You can also use a magnifying glass to check the perforations of the tab match the bag. It is important to observe the bottom of the bag is seamless.
+
+![Example of bagged unit](img/coldcard-bagged-v2.png){.limit-size}
 
 ## Power Up
 
