@@ -10,6 +10,9 @@ ordering: 1000
 
 ### Guides by Others
 
+- Full guides
+	- [Coldcard 101 by Bitcoin Q+A (Basic intro, Main features, How to set one up, Receive and send a transaction using Electrum, Create a backup, Adding a passphrase)](https://www.bitcoinqna.com/post/coldcard-101)
+
 - Electrum
 	- [Video: How to use ColdCard with **Electrum**](https://www.youtube.com/watch?v=9A0cS2wwMI0)
 	- [How to make offline transactions in **Electrum** with Coldcard wallet.](https://medium.com/@Multicripto/how-to-make-offline-transactions-in-electrum-with-coldcard-wallet-838f84df379a) | [Spanish](https://medium.com/@Multicripto/c%C3%B3mo-hacer-transacciones-offline-con-coldcard-wallet-a-trav%C3%A9s-de-electrum-b2eeb847e4b2)
