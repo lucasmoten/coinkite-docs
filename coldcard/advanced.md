@@ -10,6 +10,7 @@ The advanced menu contains a number of useful features that are not required dai
 
 ## Advanced Functions
 
+
 View Identity
 : Display a few public details about your wallet, such as the XPUB and the fingerprint.
 
@@ -27,6 +28,7 @@ View Identity
 
 Address Explorer
 : View payment addresses, and optionally save them to a MicroSD card.
+  {{ vidlink("Address Explorer",  "https://www.youtube.com/watch?v=KinK1B2u-_s") }}
 
 [Derive Entropy](bip85)
 : Create and export deterministic entropy for other wallet systems (BIP-85).
