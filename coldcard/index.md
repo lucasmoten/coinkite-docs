@@ -46,6 +46,8 @@ ordering: 1000
 	- [Video: How To Use Coldcard Wallet | Import-Backup Wallets + Settings](https://www.youtube.com/watch?v=M3miU_xp-IY)
 	- [Videos em Portugues: Coldcard | Tutorial Completo](https://www.youtube.com/watch?v=jutQyA0X_Sc&list=PLgcVYwONyxmgyS3fAPkLCyejKEDQJWRLd)
 	- [Video: How to show your Coldcard balance on iPhone](https://www.youtube.com/watch?v=xWeQwOyEDhI&t=356s)
+	- [Protect your Bitcoin with an Electrum Multisig wallet, with Coldcard, Ledger, and Trezor](https://medium.com/@1700constantino/protect-your-bitcoin-with-an-electrum-multi-sig-wallet-with-coldcard-ledger-and-trezor-96397e4ce287)
+
 
 - Reviews
 	- [Video: Ministry of Nodes Review - Coinkite Coldcard Mk2](https://www.youtube.com/watch?v=eXInjdY9AM8)
