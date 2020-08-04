@@ -2,13 +2,29 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.7
+## Current Version of Coldcard Firmware &mdash; Version 3.1.8
 
-[2020-07-03T1851-v3.1.7-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-07-03T1851-v3.1.7-coldcard.dfu) released July 3, 2020.
+[2020-08-04T1846-v3.1.8-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-08-04T1846-v3.1.8-coldcard.dfu) released Aug 4 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
 
 {{ vidlink("How to Upgrade Firmware", "https://www.youtube.com/watch?v=RYcB5HpfcaE&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=3") }}
+
+## Version 3.1.8 - Aug 4, 2020
+
+- Massive Enhancement: Optimized and improved drawing speed on screen, and responsiveness of keypad 
+  entry. You'll see some slight changes to login screen (centered now) and massive drawing
+  performance improvements system-wide. Laggy and unresponsive keypad is no more!
+- New feature: New setting, "Delete PSBTs", will blank and securely erase input PSBT files
+  when they are no longer needed. Also renames signed transaction to be `(txid).txn` (in hex)
+- Enhancement: The current XFP (xpub fingerprint) is shown on the "Ready To Sign" screen,
+  if you have entered an BIP39 Passphrase.
+- Enhancement: File names from SD Card are now shown in sorted order.
+- Enhancement: Can show the SHA256(file contents) for any file on SD Card. Use
+  Advanced > MicroSD > List Files and pick your file. Thanks to B.O. for this idea.
+- Enhancement: Enable full BIP-85 support on older Mk2 hardware (derived entropy feature).
+- Enhancement: Minor text changes based on feedback from customers.
+- Enhancement: Two assertions promoted to text error messags related to bad PSBT files.
 
 ## Version 3.1.7 - July 3, 2020
 
