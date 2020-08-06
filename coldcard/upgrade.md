@@ -2,15 +2,15 @@ title: Upgrade Firmware
 
 <em><a href="#upgradenow" >Learn how to upgrade here ></a></em>
 
-## Current Version of Coldcard Firmware &mdash; Version 3.1.8
+## Current Version of Coldcard Firmware &mdash; Version 3.1.9
 
-[2020-08-04T1846-v3.1.8-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-08-04T1846-v3.1.8-coldcard.dfu) released Aug 4 2020.
+[2020-08-06T1722-v3.1.9-coldcard.dfu](https://github.com/Coldcard/firmware/raw/master/releases/2020-08-06T1722-v3.1.9-coldcard.dfu) released Aug 6, 2020.
 
 _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They will brick Mk1 Coldcards._
 
 {{ vidlink("How to Upgrade Firmware", "https://www.youtube.com/watch?v=RYcB5HpfcaE&list=PLZKkuPrgFw0axLoDDzxAIYzpZeC_T1i7W&index=3") }}
 
-## Version 3.1.8 - Aug 4, 2020
+## Version 3.1.8 and 3.1.9 - Aug 6, 2020
 
 - Massive Enhancement: Optimized and improved drawing speed on screen, and responsiveness of keypad 
   entry. You'll see some slight changes to login screen (centered now) and massive drawing
@@ -25,6 +25,8 @@ _**NOTE**: Releases 3.1.0 and later are NOT COMPATIBLE with Mk1 hardware. They w
 - Enhancement: Enable full BIP-85 support on older Mk2 hardware (derived entropy feature).
 - Enhancement: Minor text changes based on feedback from customers.
 - Enhancement: Two assertions promoted to text error messags related to bad PSBT files.
+- (v3.1.9) Enhancement: Very minor change so that login feels more responsive.
+- (v3.1.9) Bugfix: Small bug in production selftest. No other changes.
 
 ## Version 3.1.7 - July 3, 2020
 
