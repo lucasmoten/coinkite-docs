@@ -126,7 +126,7 @@ There are no more steps; the new value is in effect.
   the one you want.  If you create a skeleton Electrum wallet, you
   should do it after entering the passphrase of the new wallet.
 
-- PSBT files contain a reference the wallet fingerprint so you will get helpful errors
+- PSBT files contain a reference to the wallet fingerprint so you will get helpful errors
   if you try to sign a PSBT using the wrong passphrase. The correct fingerprint
   is shown in the error message.
 
@@ -142,7 +142,7 @@ There are no more steps; the new value is in effect.
   confirm it on the Coldcard, but this can be handy way to enter complex passphrases
   assuming you trust the desktop computer and any keyloggers present there.
 
-- Passphrases may be used an alternative to the "duress PIN" feature, and it is more
+- Passphrases may be used as an alternative to the "duress PIN" feature, and it is more
   powerful because there are an unlimited number of possible wallets.
 
 - Saved passphrase values can be found in the file `/.tmp.tmp` on the MicroSD card, if
@@ -202,7 +202,7 @@ file.
 - If you tire of entering the passphrase everyday... this frees you of that burden.
 
 - You might create a few wallets, all based on the same seed words, but
-  different passphrases for delegation to other people. You can protect the confidentially
+  different passphrases for delegation to other people. You can protect the confidentiality
   of the seed words, and load a number of Coldcards with the same seed words and
   different passphrases each. This is done easily by restoring the same backup file
   into each new Coldcard, entering a distinct passphrase, and "locking down" the seed.
